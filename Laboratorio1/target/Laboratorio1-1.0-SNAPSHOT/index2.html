@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portafolio</title>
+    <link href="CSS/estilos2.css" rel="stylesheet" type="text/css"/>
+    
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap"
+    />
+  </head>
+
+  <body>
+    <header class="contenido-encabezado" id="contenido-encabezado">
+      <div class="texto-encabezado">
+         <h1 class="titulo">
+          <span class="titulo-naranja-neon texto-regular"
+            >My Portafolio</span
+          >
+        </h1>
+        <p class="descripcion">
+          <p><img src="CSS/IMG/tusk.png" width="350" ></p>
+        </p>
+        <a href="https://github.com/danterodriguezchambi" class="btn-link texto-regular">GITHUB</a>
+        <a href="index3.html" class="btn-link texto-regular">PROYECTO JAVASCRIPT</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="contenedor">
+        <h2 class="subtitulo-h2">Bienvenido</h2>
+        <p>
+            <span class="letra-capital">Hola 🙂</span>
+            <br><br>
+            <p class="Contenido-Bienvenido">
+            Este es mi sitio Web donde podras encontrar información sobre mis futuros proyectos.
+            Espero que te <span class="importante">👍</span> guste el contenido.
+            </p>
+            <h2 class="subtitulo-h2">Sobre Mi</h2>
+            <p class="Contenido-Bienvenido">Mi nombre es <span class="importante">Dante Rodríguez Chambi</span>soy un programador en proceso y apasionado a la tecnologia y a la creacion de aplicaciones.
+              <div class="Contenido-Bienvenido">
+                <li>La programación web y movil.</li>
+                <li>La creacion de inteligencia artificial.</li>
+              </div>
+            </p>
+            <h2 class="subtitulo-h2">Idiomas</h2>
+            <p class="subtitulo-h2">
+              <div class="Contenido-Bienvenido">
+                <li>Español: Nativo</li>
+                <li>Ingles: Basico Actualmente</li>
+              </div>
+            </p>
+        </p>
+      </section>
+    </main>
+    
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <script>
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('contenido-encabezado');
+            header.style.opacity = '1' - window.pageYOffset / 650;
+        });
+    </script>
+  </body>
+</html>
